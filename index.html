@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minecraft сервер SDK SMP — ванильное выживание, города</title>
+<meta name="description" content="SDK SMP — полноценный Minecraft SMP на ванильном выживании: города, торговля и модерация. IP 213.152.43.51:25642, Java 26.3. Заявка на вход через Telegram.">
+<link rel="canonical" href="https://example.com/">
+<meta name="theme-color" content="#070d0a">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="SDK SMP">
+<meta property="og:title" content="Minecraft сервер SDK SMP — ванильное выживание, города">
+<meta property="og:description" content="Полноценный SMP на ванильном выживании: города, торговля и правила против гриферства. Java 26.3, IP 213.152.43.51:25642.">
+<meta property="og:url" content="https://example.com/">
+<meta property="og:image" content="https://example.com/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/bg.webp" type="image/webp">
+<script>document.documentElement.classList.add("js");</script>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Minecraft-сервер «SDK SMP»",
+  "url": "https://example.com/",
+  "logo": "https://example.com/assets/img/logo-256.png",
+  "description": "Полноценный SMP на ванильном выживании: города, торговля, ивенты и античит.",
+  "sameAs": ["https://t.me/aron1478"]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+
+<header class="top">
+  <div class="shell top__in">
+    <a class="logo" href="index.html"><img class="logo__mark" src="assets/img/logo-128.png" alt="" width="34" height="34">SDK <b>SMP</b></a>
+
+    <nav class="menu" id="menu" aria-label="Основная навигация">
+      <a href="index.html" class="is-active" aria-current="page">Главная</a>
+      <a href="about.html">О сервере</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="join.html">Проходка</a>
+      <a href="store.html">Магазин</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+
+    <div class="top__act">
+      <button class="btn btn--dark btn--sm head-ip" type="button" data-copy-ip aria-label="Скопировать IP сервера"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M9 9V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-4M3 11a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><span>IP</span></button>
+      <a class="btn btn--green btn--sm" href="#" data-link="telegram">Telegram</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="hero__veil" aria-hidden="true"></div>
+
+    <div class="shell hero__inner" data-reveal>
+      <p class="badge">SMP · ванильное выживание · города</p>
+      <h1 class="hero__title">Добро пожаловать<br>на <span data-server="name">SDK SMP</span></h1>
+      <p class="hero__lead">Полноценный SMP на ванильном выживании: города, общие проекты и торговля. Убивать без причины, забирать чужие ресурсы и воровать нельзя — за этим следит модерация.</p>
+
+      <div class="hero__actions">
+        <a class="btn btn--green" href="join.html">Начать играть</a>
+        <a class="btn btn--dark" href="#" data-link="telegram">Telegram</a>
+      </div>
+
+      <div class="status-card" data-reveal>
+        <div class="status-card__top">
+          <span class="status-dot" data-live="dot" aria-hidden="true"></span>
+          <span class="status-label" data-live="status-text">Проверяем сервер…</span>
+          <span class="status-updated"><time data-live="updated">—</time></span>
+        </div>
+
+        <dl class="status-grid">
+          <div><dt>Игроков</dt><dd><span data-live="players">—</span>/<span data-live="max" data-server="maxSlots">20</span></dd></div>
+          <div><dt>Версия</dt><dd data-live="version" data-server="version">26.3</dd></div>
+        </dl>
+
+        <div class="status-ip">
+          <code data-ip>213.152.43.51:25642</code>
+          <button class="copy-btn" type="button" data-copy-ip aria-label="Скопировать IP сервера">
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><path d="M9 9V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-4M3 11a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            Скопировать
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <a class="scroll-hint" href="#about-teaser" aria-label="Листать вниз">
+      Листай вниз
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </a>
+  </section>
+
+  <section class="section" id="about-teaser">
+    <div class="shell">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow">О сервере</p>
+        <h2>Не просто выживание, а общий мир</h2>
+        <p>Города растут вокруг спавна, ресурсы добываются руками, а конфликты решаются по правилам. Администрация следит за честностью, а не за сюжетом.</p>
+      </div>
+
+      <div class="cards" data-reveal>
+        <article class="tile glass">
+          <span class="tile__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 4v5c0 4-3 7-7 9-4-2-7-5-7-9V7z" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Города</h3>
+          <p>Общие поселения с дорогами, складами и рынком. Границы и споры разбирает модератор.</p>
+        </article>
+
+        <article class="tile glass">
+          <span class="tile__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20l4-1 10-10-3-3L5 16z" stroke-linejoin="round"/><path d="M14 6l4 4" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Ванильное выживание</h3>
+          <p>Без модов и кастомных предметов: только механики Java Edition. Всё добывается руками.</p>
+        </article>
+
+        <article class="tile glass">
+          <span class="tile__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><path d="M12 8v8M9.5 10h4a1.5 1.5 0 010 3h-3a1.5 1.5 0 000 3h4" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Торговля</h3>
+          <p>Обмен ресурсами и договорённости между игроками. Никаких магазинов за реальные деньги.</p>
+        </article>
+      </div>
+
+      <div class="gallery-more">
+        <a class="btn btn--dark" href="about.html">Подробнее о сервере</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="shell">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow">Галерея</p>
+        <h2>Взгляд изнутри</h2>
+        <p>Спавн, хаб и фермы — без фильтров и постановки.</p>
+      </div>
+
+      <div class="gallery" data-reveal>
+        <a class="shot glass" href="gallery.html" aria-label="Открыть галерею: спавн">
+          <picture><source srcset="assets/img/spawn.webp" type="image/webp"><img src="assets/img/spawn.jpg" alt="Спавн: усадьба у воды" width="1200" height="800" loading="lazy" decoding="async"></picture>
+          
+        </a>
+        <a class="shot glass" href="gallery.html" aria-label="Открыть галерею: хаб">
+          <picture><source srcset="assets/img/hub-1.webp" type="image/webp"><img src="assets/img/hub-1.jpg" alt="Подземный хаб с порталами и сундуками" width="1200" height="800" loading="lazy" decoding="async"></picture>
+          
+        </a>
+        <a class="shot glass" href="gallery.html" aria-label="Открыть галерею: фермы">
+          <picture><source srcset="assets/img/farm-1.webp" type="image/webp"><img src="assets/img/farm-1.jpg" alt="Пшеничные поля с парящими островами" width="1200" height="800" loading="lazy" decoding="async"></picture>
+          
+        </a>
+      </div>
+
+      <div class="gallery-more">
+        <a class="btn btn--dark" href="gallery.html">Все скриншоты</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="shell">
+      <div class="cta" data-reveal>
+        <div>
+          <h2>Готовы войти в мир?</h2>
+          <p>Заявка занимает минуту, ответ — до 24 часов. Свободных мест немного.</p>
+        </div>
+        <div class="cta__act">
+          <a class="btn btn--green" href="join.html">Оставить заявку</a>
+          <a class="btn btn--dark" href="store.html">Купить проходку</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="shell foot">
+    <div>
+      <a class="logo" href="index.html"><img class="logo__mark" src="assets/img/logo-128.png" alt="" width="34" height="34">SDK <b>SMP</b></a>
+      <p class="small muted">Закрытый SMP-сервер для тех, кто любит строить, а не ломать.</p>
+    </div>
+
+    <div>
+      <p class="foot__t">Сервер</p>
+      <button class="ipcopy" type="button" data-copy-ip aria-label="Скопировать IP сервера">
+        <code data-ip>213.152.43.51:25642</code>
+        <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M9 9V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-4M3 11a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+      </button>
+      <p class="small muted">Java Edition · <span data-server="version">26.3</span> · <span data-server="mode">выживание</span></p>
+    </div>
+
+    <div>
+      <p class="foot__t">Разделы</p>
+      <ul class="foot__links">
+        <li><a href="about.html">О сервере</a></li>
+        <li><a href="join.html">Проходка</a></li>
+        <li><a href="store.html">Магазин</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="foot__t">Документы и связь</p>
+      <ul class="foot__links">
+        <li><a href="rules.html">Правила сервера</a></li>
+        <li><a href="offer.html">Оферта</a></li>
+        <li><a href="privacy.html">Политика ПД</a></li>
+        <li><a href="https://t.me/aron1478">Telegram</a></li>
+        <li><button class="linklike" type="button" data-copy-text="aronnman1345@gmail.com">Почта</button></li>
+        <li><button class="linklike" type="button" data-copy-text="aron1804">Discord: aron1804</button></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="shell foot__bottom">
+    <p class="small muted">© <span data-year>2026</span> «<span data-server="name">SDK SMP</span>». Сервер не связан с Mojang и Microsoft. Minecraft — торговая марка Mojang AB.</p>
+    <p class="small muted">Без CMS, трекеров и сборки.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Галерея — SDK SMP</title>
+<meta name="description" content="Скриншоты SDK SMP: спавн, спавн с воздуха, подземный хаб и фермы сервера.">
+<link rel="canonical" href="https://example.com/gallery.html">
+<meta name="theme-color" content="#070d0a">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="SDK SMP">
+<meta property="og:title" content="Галерея — SDK SMP">
+<meta property="og:description" content="Спавн, хаб и фермы: кадры с ванильного SMP-сервера.">
+<meta property="og:url" content="https://example.com/gallery.html">
+<meta property="og:image" content="https://example.com/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js");</script>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+
+<header class="top">
+  <div class="shell top__in">
+    <a class="logo" href="index.html"><img class="logo__mark" src="assets/img/logo-128.png" alt="" width="34" height="34">SDK <b>SMP</b></a>
+    <nav class="menu" id="menu" aria-label="Основная навигация">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О сервере</a>
+      <a href="gallery.html" class="is-active" aria-current="page">Галерея</a>
+      <a href="join.html">Проходка</a>
+      <a href="store.html">Магазин</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="top__act">
+      <button class="btn btn--dark btn--sm head-ip" type="button" data-copy-ip aria-label="Скопировать IP сервера"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M9 9V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-4M3 11a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><span>IP</span></button>
+      <a class="btn btn--green btn--sm" href="#" data-link="telegram">Telegram</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head">
+    <div class="shell">
+      <p class="eyebrow">Галерея</p>
+      <h1>Как выглядит сервер</h1>
+      <p>Спавн, подземный хаб и фермы. Клик открывает просмотр: листать можно стрелками, свайпом или клавишами ← →.</p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="shell">
+      <div class="gallery-group" data-reveal>
+        <div class="group-head">
+          <h2>Спавн</h2>
+          <p class="small muted">Где начинается игра</p>
+        </div>
+        <div class="gallery gallery--pair">
+          <button class="shot glass" type="button" data-webp="assets/img/spawn.webp" data-jpg="assets/img/spawn.jpg" aria-label="Открыть скриншот: спавн, усадьба у воды">
+            <picture><source srcset="assets/img/spawn.webp" type="image/webp"><img src="assets/img/spawn.jpg" alt="Спавн: большая деревянная усадьба у воды" width="1200" height="800" loading="lazy" decoding="async"></picture>
+          </button>
+          <button class="shot glass" type="button" data-webp="assets/img/spawn-air.webp" data-jpg="assets/img/spawn-air.jpg" aria-label="Открыть скриншот: спавн с воздуха">
+            <picture><source srcset="assets/img/spawn-air.webp" type="image/webp"><img src="assets/img/spawn-air.jpg" alt="Спавн с воздуха: площадь, дороги и окрестности" width="1200" height="800" loading="lazy" decoding="async"></picture>
+          </button>
+        </div>
+      </div>
+
+      <div class="gallery-group" data-reveal>
+        <div class="group-head">
+          <h2>Хаб</h2>
+          <p class="small muted">Порталы и общий склад</p>
+        </div>
+        <div class="gallery gallery--single">
+          <button class="shot glass" type="button" data-webp="assets/img/hub-1.webp" data-jpg="assets/img/hub-1.jpg" aria-label="Открыть скриншот: хаб">
+            <picture><source srcset="assets/img/hub-1.webp" type="image/webp"><img src="assets/img/hub-1.jpg" alt="Подземный хаб с порталами и сундуками" width="1200" height="800" loading="lazy" decoding="async"></picture>
+          </button>
+        </div>
+      </div>
+
+      <div class="gallery-group" data-reveal>
+        <div class="group-head">
+          <h2>Фермы</h2>
+          <p class="small muted">Еда и ресурсы</p>
+        </div>
+        <div class="gallery gallery--pair">
+          <button class="shot glass" type="button" data-webp="assets/img/farm-1.webp" data-jpg="assets/img/farm-1.jpg" aria-label="Открыть скриншот: пшеничные поля">
+            <picture><source srcset="assets/img/farm-1.webp" type="image/webp"><img src="assets/img/farm-1.jpg" alt="Пшеничные поля с парящими островами" width="1200" height="800" loading="lazy" decoding="async"></picture>
+          </button>
+          <button class="shot glass" type="button" data-webp="assets/img/farm-2.webp" data-jpg="assets/img/farm-2.jpg" aria-label="Открыть скриншот: ферма у воды">
+            <picture><source srcset="assets/img/farm-2.webp" type="image/webp"><img src="assets/img/farm-2.jpg" alt="Ферма с постройкой у воды" width="1200" height="800" loading="lazy" decoding="async"></picture>
+          </button>
+          <button class="shot glass" type="button" data-webp="assets/img/hub-2.webp" data-jpg="assets/img/hub-2.jpg" aria-label="Открыть скриншот: ферма в коридоре">
+            <picture><source srcset="assets/img/hub-2.webp" type="image/webp"><img src="assets/img/hub-2.jpg" alt="Ферма в фиолетовом коридоре с растениями" width="1200" height="800" loading="lazy" decoding="async"></picture>
+          </button>
+          <button class="shot glass" type="button" data-webp="assets/img/hub-3.webp" data-jpg="assets/img/hub-3.jpg" aria-label="Открыть скриншот: ферма с мостом">
+            <picture><source srcset="assets/img/hub-3.webp" type="image/webp"><img src="assets/img/hub-3.jpg" alt="Ферма с мостом в фиолетовом коридоре" width="1200" height="800" loading="lazy" decoding="async"></picture>
+          </button>
+        </div>
+      </div>
+
+      <div class="gallery-more">
+        <a class="btn btn--dark" href="join.html">Хочу на сервер</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<dialog class="lb" id="lightbox" aria-label="Просмотр скриншота">
+  <div class="lb__frame">
+    <button class="lb__close" type="button" data-lb-close aria-label="Закрыть просмотр">×</button>
+    <button class="lb__nav lb__nav--prev" type="button" data-lb-prev aria-label="Предыдущий скриншот">‹</button>
+    <figure class="lb__fig">
+      <picture><source id="lb-src" type="image/webp"><img id="lb-img" src="assets/img/spawn.jpg" alt="" width="1200" height="800" decoding="async"></picture>
+    </figure>
+    <button class="lb__nav lb__nav--next" type="button" data-lb-next aria-label="Следующий скриншот">›</button>
+    <p class="lb__count" id="lb-count" aria-live="polite"></p>
+  </div>
+</dialog>
+
+<footer class="site-foot">
+  <div class="shell foot">
+    <div>
+      <a class="logo" href="index.html"><img class="logo__mark" src="assets/img/logo-128.png" alt="" width="34" height="34">SDK <b>SMP</b></a>
+      <p class="small muted">Ванильный SMP для тех, кто любит строить, а не ломать.</p>
+    </div>
+    <div>
+      <p class="foot__t">Сервер</p>
+      <button class="ipcopy" type="button" data-copy-ip aria-label="Скопировать IP сервера">
+        <code data-ip>213.152.43.51:25642</code>
+        <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M9 9V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-4M3 11a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+      </button>
+      <p class="small muted">Java Edition · <span data-server="version">26.3</span> · <span data-server="mode">ванильное выживание</span></p>
+    </div>
+    <div>
+      <p class="foot__t">Разделы</p>
+      <ul class="foot__links">
+        <li><a href="about.html">О сервере</a></li>
+        <li><a href="join.html">Проходка</a></li>
+        <li><a href="store.html">Магазин</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="foot__t">Документы и связь</p>
+      <ul class="foot__links">
+        <li><a href="rules.html">Правила сервера</a></li>
+        <li><a href="offer.html">Оферта</a></li>
+        <li><a href="privacy.html">Политика ПД</a></li>
+        <li><a href="https://t.me/aron1478">Telegram</a></li>
+        <li><button class="linklike" type="button" data-copy-text="aronnman1345@gmail.com">Почта</button></li>
+        <li><button class="linklike" type="button" data-copy-text="aron1804">Discord: aron1804</button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell foot__bottom">
+    <p class="small muted">© <span data-year>2026</span> «<span data-server="name">SDK SMP</span>». Сервер не связан с Mojang и Microsoft. Minecraft — торговая марка Mojang AB.</p>
+    <p class="small muted">Без CMS, трекеров и сборки.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

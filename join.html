@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Проходка на сервер — SDK SMP</title>
+<meta name="description" content="Как попасть на SDK SMP: заявка, проверка, оплата проходки 150 ₽ и вход. Ник, возраст и источник — форма на сайте или Telegram.">
+<link rel="canonical" href="https://example.com/join.html">
+<meta name="theme-color" content="#070d0a">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="SDK SMP">
+<meta property="og:title" content="Проходка на сервер — SDK SMP">
+<meta property="og:description" content="Заявка, проверка, оплата проходки 150 ₽, вход. Ванильный Java-сервер.">
+<meta property="og:url" content="https://example.com/join.html">
+<meta property="og:image" content="https://example.com/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js");</script>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+
+<header class="top">
+  <div class="shell top__in">
+    <a class="logo" href="index.html"><img class="logo__mark" src="assets/img/logo-128.png" alt="" width="34" height="34">SDK <b>SMP</b></a>
+    <nav class="menu" id="menu" aria-label="Основная навигация">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О сервере</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="join.html" class="is-active" aria-current="page">Проходка</a>
+      <a href="store.html">Магазин</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="top__act">
+      <button class="btn btn--dark btn--sm head-ip" type="button" data-copy-ip aria-label="Скопировать IP сервера"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M9 9V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-4M3 11a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><span>IP</span></button>
+      <a class="btn btn--green btn--sm" href="#" data-link="telegram">Telegram</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head">
+    <div class="shell">
+      <p class="eyebrow">Проходка</p>
+      <h1>Как попасть на сервер</h1>
+      <p>Сервер закрытый: сначала заявка, потом проверка и оплата проходки. Это фильтр от гриферов и читеров, а не бюрократия.</p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="shell">
+      <ol class="steps" data-reveal>
+        <li class="step glass"><span class="step__n">1</span><h3>Заявка</h3><p>Заполните форму ниже или напишите в Telegram: ник, возраст, откуда узнали.</p></li>
+        <li class="step glass"><span class="step__n">2</span><h3>Проверка и оплата</h3><p>Модератор проверяет заявку и присылает ссылку на оплату проходки — 150 ₽.</p></li>
+        <li class="step glass"><span class="step__n">3</span><h3>Вход</h3><p>После оплаты выдаём whitelist, IP и версию. Первые минуты — короткий инструктаж у спавна.</p></li>
+      </ol>
+
+      <div class="join-grid">
+        <form class="panel glass form" id="apply-form" data-reveal novalidate>
+          <h3>Оставить заявку</h3>
+          <p class="muted small">Форма не отправляет данные на сервер: текст заявки копируется в буфер, а вы вставляете его в чат Telegram. Так работает статика без бэкенда.</p>
+
+          <label class="field">
+            <span>Ник в Minecraft</span>
+            <input type="text" name="nick" required minlength="3" maxlength="16" autocomplete="username" placeholder="Steve">
+          </label>
+
+          <label class="field">
+            <span>Возраст</span>
+            <input type="number" name="age" required min="10" max="99" inputmode="numeric" placeholder="16">
+          </label>
+
+          <label class="field">
+            <span>Откуда узнали</span>
+            <select name="source" required>
+              <option value="" selected disabled>Выберите вариант</option>
+              <option>От друзей</option>
+              <option>Twitch</option>
+              <option>Discord</option>
+            </select>
+          </label>
+
+          <button class="btn btn--green" type="submit">Отправить заявку</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="panel glass rules" data-reveal>
+          <h3>Правила кратко</h3>
+          <ul class="list">
+            <li>Без читов, макросов и X-Ray. Разрешены оптимизаторы и миникарта без радара руды.</li>
+            <li>Не убивать без причины, не забирать чужие ресурсы и не воровать.</li>
+            <li>Не гриферить: приватки и логи блоков помогают найти виновника.</li>
+            <li>Без оскорблений, травли и политики в общем чате.</li>
+            <li>Фермы, которые сильно нагружают сервер, переделываются по просьбе модератора.</li>
+          </ul>
+          <a class="btn btn--dark" href="rules.html">Полные правила</a>
+          <p class="muted small">Заявка не гарантирует вход: мест ограниченное количество, а решение модератора окончательное. Проходка — 150 ₽, оплачивается только после одобрения.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="shell">
+      <div class="cta" data-reveal>
+        <div>
+          <h2>Не хотите заполнять форму?</h2>
+          <p>Напишите в Telegram: ник, возраст и пара слов о себе. Этого достаточно.</p>
+        </div>
+        <div class="cta__act">
+          <a class="btn btn--green" href="#" data-link="telegram">Написать в Telegram</a>
+          <a class="btn btn--dark" href="faq.html">Частые вопросы</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="shell foot">
+    <div>
+      <a class="logo" href="index.html"><img class="logo__mark" src="assets/img/logo-128.png" alt="" width="34" height="34">SDK <b>SMP</b></a>
+      <p class="small muted">Ванильный SMP для тех, кто любит строить, а не ломать.</p>
+    </div>
+    <div>
+      <p class="foot__t">Сервер</p>
+      <button class="ipcopy" type="button" data-copy-ip aria-label="Скопировать IP сервера">
+        <code data-ip>213.152.43.51:25642</code>
+        <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M9 9V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-4M3 11a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+      </button>
+      <p class="small muted">Java Edition · <span data-server="version">26.3</span> · <span data-server="mode">ванильное выживание</span></p>
+    </div>
+    <div>
+      <p class="foot__t">Разделы</p>
+      <ul class="foot__links">
+        <li><a href="about.html">О сервере</a></li>
+        <li><a href="join.html">Проходка</a></li>
+        <li><a href="store.html">Магазин</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="foot__t">Документы и связь</p>
+      <ul class="foot__links">
+        <li><a href="rules.html">Правила сервера</a></li>
+        <li><a href="offer.html">Оферта</a></li>
+        <li><a href="privacy.html">Политика ПД</a></li>
+        <li><a href="https://t.me/aron1478">Telegram</a></li>
+        <li><button class="linklike" type="button" data-copy-text="aronnman1345@gmail.com">Почта</button></li>
+        <li><button class="linklike" type="button" data-copy-text="aron1804">Discord: aron1804</button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell foot__bottom">
+    <p class="small muted">© <span data-year>2026</span> «<span data-server="name">SDK SMP</span>». Сервер не связан с Mojang и Microsoft. Minecraft — торговая марка Mojang AB.</p>
+    <p class="small muted">Без CMS, трекеров и сборки.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
