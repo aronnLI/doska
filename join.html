@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Проходка на сервер — SDK SMP</title>
-<meta name="description" content="Как попасть на SDK SMP: заявка, проверка, оплата проходки 150 ₽ и вход. Ник, возраст и источник — форма на сайте или Telegram.">
+<title>Как попасть на сервер — SDK SMP</title>
+<meta name="description" content="Как попасть на SDK SMP: зайдите на стрим doska_220 на Twitch и попросите добавить вас в чате. Добавление вручную, бесплатно.">
 <link rel="canonical" href="https://example.com/join.html">
 <meta name="theme-color" content="#070d0a">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:site_name" content="SDK SMP">
-<meta property="og:title" content="Проходка на сервер — SDK SMP">
-<meta property="og:description" content="Заявка, проверка, оплата проходки 150 ₽, вход. Ванильный Java-сервер.">
+<meta property="og:title" content="Как попасть на сервер — SDK SMP">
+<meta property="og:description" content="Заходите на стрим doska_220 и попросите добавить в чате. Ванильный Java-сервер.">
 <meta property="og:url" content="https://example.com/join.html">
 <meta property="og:image" content="https://example.com/assets/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -36,12 +36,11 @@
       <a href="about.html">О сервере</a>
       <a href="gallery.html">Галерея</a>
       <a href="join.html" class="is-active" aria-current="page">Проходка</a>
-      <a href="store.html">Магазин</a>
       <a href="faq.html">FAQ</a>
     </nav>
     <div class="top__act">
       <button class="btn btn--dark btn--sm head-ip" type="button" data-copy-ip aria-label="Скопировать IP сервера"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M9 9V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-4M3 11a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><span>IP</span></button>
-      <a class="btn btn--green btn--sm" href="#" data-link="telegram">Telegram</a>
+      <a class="btn btn--green btn--sm" href="#" data-link="twitch">Twitch</a>
       <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Открыть меню"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -52,46 +51,26 @@
     <div class="shell">
       <p class="eyebrow">Проходка</p>
       <h1>Как попасть на сервер</h1>
-      <p>Сервер закрытый: сначала заявка, потом проверка и оплата проходки. Это фильтр от гриферов и читеров, а не бюрократия.</p>
+      <p>Сервер закрытый, добавление — вручную. Зайдите на стрим и попросите добавить вас в чате: этого достаточно.</p>
     </div>
   </section>
 
   <section class="section section--tight">
     <div class="shell">
       <ol class="steps" data-reveal>
-        <li class="step glass"><span class="step__n">1</span><h3>Заявка</h3><p>Заполните форму ниже или напишите в Telegram: ник, возраст, откуда узнали.</p></li>
-        <li class="step glass"><span class="step__n">2</span><h3>Проверка и оплата</h3><p>Модератор проверяет заявку и присылает ссылку на оплату проходки — 150 ₽.</p></li>
-        <li class="step glass"><span class="step__n">3</span><h3>Вход</h3><p>После оплаты выдаём whitelist, IP и версию. Первые минуты — короткий инструктаж у спавна.</p></li>
+        <li class="step glass"><span class="step__n">1</span><h3>Зайдите на стрим</h3><p>Откройте Twitch-канал doska_220. Ссылка ниже — и в шапке сайта.</p></li>
+        <li class="step glass"><span class="step__n">2</span><h3>Попросите добавить</h3><p>Напишите в чат свой ник в Minecraft и попросите добавить на сервер.</p></li>
+        <li class="step glass"><span class="step__n">3</span><h3>Заходите в игру</h3><p>После добавления в whitelist подключайтесь по IP со страницы. Версия — Java 26.3.</p></li>
       </ol>
 
       <div class="join-grid">
-        <form class="panel glass form" id="apply-form" data-reveal novalidate>
-          <h3>Оставить заявку</h3>
-          <p class="muted small">Форма не отправляет данные на сервер: текст заявки копируется в буфер, а вы вставляете его в чат Telegram. Так работает статика без бэкенда.</p>
-
-          <label class="field">
-            <span>Ник в Minecraft</span>
-            <input type="text" name="nick" required minlength="3" maxlength="16" autocomplete="username" placeholder="Steve">
-          </label>
-
-          <label class="field">
-            <span>Возраст</span>
-            <input type="number" name="age" required min="10" max="99" inputmode="numeric" placeholder="16">
-          </label>
-
-          <label class="field">
-            <span>Откуда узнали</span>
-            <select name="source" required>
-              <option value="" selected disabled>Выберите вариант</option>
-              <option>От друзей</option>
-              <option>Twitch</option>
-              <option>Discord</option>
-            </select>
-          </label>
-
-          <button class="btn btn--green" type="submit">Отправить заявку</button>
-          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-        </form>
+        <div class="panel glass" data-reveal>
+          <h3>Добавление на стриме</h3>
+          <p>Стрим — основной способ попасть на сервер. Зайдите, напишите ник в чат и попросите добавить. Модератор добавит вас в whitelist вручную.</p>
+          <p class="muted small">Если стрим ещё не начался — подпишитесь на канал, чтобы не пропустить эфир.</p>
+          <a class="btn btn--green" href="https://www.twitch.tv/doska_220" target="_blank" rel="noopener noreferrer">Смотреть стрим на Twitch</a>
+          <p class="muted small">IP для входа: <code data-ip>213.152.43.51:25642</code> · версия <span data-server="version">26.3</span></p>
+        </div>
 
         <div class="panel glass rules" data-reveal>
           <h3>Правила кратко</h3>
@@ -103,7 +82,7 @@
             <li>Фермы, которые сильно нагружают сервер, переделываются по просьбе модератора.</li>
           </ul>
           <a class="btn btn--dark" href="rules.html">Полные правила</a>
-          <p class="muted small">Заявка не гарантирует вход: мест ограниченное количество, а решение модератора окончательное. Проходка — 150 ₽, оплачивается только после одобрения.</p>
+          <p class="muted small">Решение о добавлении принимает модератор. Мест на сервере ограниченное количество.</p>
         </div>
       </div>
     </div>
@@ -113,11 +92,11 @@
     <div class="shell">
       <div class="cta" data-reveal>
         <div>
-          <h2>Не хотите заполнять форму?</h2>
-          <p>Напишите в Telegram: ник, возраст и пара слов о себе. Этого достаточно.</p>
+          <h2>Готовы зайти?</h2>
+          <p>Стрим — самый быстрый способ: добавление занимает пару минут.</p>
         </div>
         <div class="cta__act">
-          <a class="btn btn--green" href="#" data-link="telegram">Написать в Telegram</a>
+          <a class="btn btn--green" href="https://www.twitch.tv/doska_220" target="_blank" rel="noopener noreferrer">Открыть Twitch</a>
           <a class="btn btn--dark" href="faq.html">Частые вопросы</a>
         </div>
       </div>
@@ -144,7 +123,6 @@
       <ul class="foot__links">
         <li><a href="about.html">О сервере</a></li>
         <li><a href="join.html">Проходка</a></li>
-        <li><a href="store.html">Магазин</a></li>
         <li><a href="faq.html">FAQ</a></li>
       </ul>
     </div>
@@ -155,6 +133,7 @@
         <li><a href="offer.html">Оферта</a></li>
         <li><a href="privacy.html">Политика ПД</a></li>
         <li><a href="https://t.me/aron1478">Telegram</a></li>
+        <li><a href="https://www.twitch.tv/doska_220">Twitch</a></li>
         <li><button class="linklike" type="button" data-copy-text="aronnman1345@gmail.com">Почта</button></li>
         <li><button class="linklike" type="button" data-copy-text="aron1804">Discord: aron1804</button></li>
       </ul>

@@ -24,6 +24,7 @@ window.MT_CONFIG = {
 
   links: {
     telegram: "https://t.me/aron1478",
+    twitch: "https://www.twitch.tv/doska_220",
     email: "mailto:aronnman1345@gmail.com",
     discord: "",                    // ссылки-инвайта нет: ник показываем кнопкой «скопировать»
     discordName: "aron1804",
