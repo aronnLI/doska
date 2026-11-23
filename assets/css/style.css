@@ -440,6 +440,16 @@ code {
 
 /* ---------- плитки ---------- */
 .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.9rem; }
+
+/* четыре карточки: последняя встаёт по центру второй строки */
+.cards--4 { display: flex; flex-wrap: wrap; justify-content: center; }
+.cards--4 .tile { flex: 1 1 300px; max-width: calc((100% - 1.8rem) / 3); }
+@media (max-width: 900px) {
+  .cards--4 .tile { max-width: calc((100% - 0.9rem) / 2); }
+}
+@media (max-width: 720px) {
+  .cards--4 .tile { flex-basis: 100%; max-width: 100%; }
+}
 .tile {
   display: flex;
   flex-direction: column;
@@ -606,6 +616,7 @@ code {
 
 /* ---------- команда ---------- */
 .team { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.85rem; }
+.team.team--one { grid-template-columns: minmax(0, 360px); justify-content: center; }
 .member { padding: 1.2rem; text-align: center; }
 .avatar {
   display: grid;
